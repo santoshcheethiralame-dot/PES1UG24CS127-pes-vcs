@@ -123,6 +123,7 @@ int object_read(const ObjectID *id, ObjectType *type_out, void **data_out, size_
     void *out = malloc(data_len + 1);
     if (!out) { free(buf); return -1; }
     memcpy(out, buf + data_offset, data_len);
+    ((char*)out)[data_len] = '\0';
     free(buf);
 
     *data_out = out;
