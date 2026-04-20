@@ -94,6 +94,9 @@ int index_status(const Index *index) {
     return 0;
 }
 
+/* index_load: opens .pes/index, parses each line with fscanf.
+   format: <mode-octal> <hex-hash> <mtime> <size> <path>
+   returns 0 even if file missing (empty index is valid) */
 int index_load(Index *index) {
     index->count = 0;
     FILE *f = fopen(INDEX_FILE, "r");
