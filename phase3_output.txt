@@ -1,0 +1,31 @@
+Staged changes:
+    staged: file1.txt
+    staged: file2.txt
+
+Unstaged changes:
+    (nothing to show)
+
+Untracked files:
+    untracked: Makefile
+    untracked: phase3_output.txt
+    untracked: test_objects.c
+    untracked: test_objects
+    untracked: tree.c
+    untracked: README.md
+    untracked: test_tree
+    untracked: test_tree.c
+    untracked: index.c
+    untracked: tree.h
+    untracked: test_sequence.sh
+    untracked: object.c
+    untracked: index.h
+    untracked: .gitignore
+    untracked: commit.c
+    untracked: pes_debug
+    untracked: pes.c
+    untracked: pes.h
+    untracked: a.txt
+    untracked: commit.h
+
+100644 4dc4510a715aa4786ce7952f95fd73febe4bbc7b673e43d0bb5e73bcd4faee4e 1776668085 5 file1.txt
+100644 e00c50e16a2df38f8d6bf809e181ad0248da6e6719f35f9f7e65d6f606199f7f 1776668005 6 file2.txt
