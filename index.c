@@ -129,6 +129,8 @@ static int cmp_entry_path(const void *a, const void *b) {
                   ((const IndexEntry *)b)->path);
 }
 
+/* index_save: sorts entries by path, writes atomically via temp+rename.
+   heap-allocates sorted copy to avoid stack overflow (Index is ~5.4MB) */
 int index_save(const Index *index) {
     // IMPORTANT: do NOT do "Index sorted = *index" here —
     // Index is ~5.4 MB and cmd_add already has one on the stack.
