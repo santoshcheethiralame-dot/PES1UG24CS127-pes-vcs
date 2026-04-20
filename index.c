@@ -169,6 +169,7 @@ int index_save(const Index *index) {
     return 0;
 }
 
+/* index_add: reads file, hashes as blob, updates or inserts index entry, saves */
 int index_add(Index *index, const char *path) {
     FILE *f = fopen(path, "rb");
     if (!f) { fprintf(stderr, "error: cannot open '%s'\n", path); return -1; }
